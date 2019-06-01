@@ -1,4 +1,7 @@
 const express = require('express');
+require("dotenv-safe").config({
+  allowEmptyValues: true
+});
 const passport = require('passport');
 const Router = require('router');
 const PassportSetup = require('./Auth/passport');
